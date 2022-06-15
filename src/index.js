@@ -1,7 +1,12 @@
-import ReactDom from "React-dom"
+import ReactDom from "react-dom"
 import React from "react"
 import App from "./App"
+import {BrowserRouter} from "react-router-dom"
 
 const root = ReactDom.createRoot(document.getElementById("root"))
 
-root.render(<App/>)
+root.render(
+<BrowserRouter>
+<App/>
+</BrowserRouter>
+)
