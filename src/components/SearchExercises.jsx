@@ -44,6 +44,7 @@ const SearchExercises = ({setExercises,bodyPart,setBodyPart}) => {
       
     setSearch("")
     setExercises(searchedExerciseData)
+    window.location.hash = "exercises"
   
     }
 
