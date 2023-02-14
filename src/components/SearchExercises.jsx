@@ -44,7 +44,9 @@ const SearchExercises = ({setExercises,bodyPart,setBodyPart}) => {
       
     setSearch("")
     setExercises(searchedExerciseData)
-    window.location.hash = "#exercises"
+    const targetDiv = document.getElementById("exercises");
+    targetDiv.scrollIntoView({ behavior: 'smooth' });
+  
   
     }
 
